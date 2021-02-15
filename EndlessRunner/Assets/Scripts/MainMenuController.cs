@@ -57,6 +57,9 @@ public class MainMenuController : MonoBehaviour
     public void CloseHelpPanel()
     {
         PlaySound();
+        LeanTween.init(800);
+        LeanTween.scaleX(helpPanel, 0, 1);
+        LeanTween.scaleY(helpPanel, 0, 1);
         helpPanel.SetActive(false);
     }
 
@@ -64,6 +67,9 @@ public class MainMenuController : MonoBehaviour
     {
         PlaySound();
         helpPanel.SetActive(true);
+        LeanTween.init(800);
+        LeanTween.scaleX(helpPanel, 1, 1);
+        LeanTween.scaleY(helpPanel, 1, 1);
     }
 
     public void CloseStatsPanel()
@@ -81,44 +87,55 @@ public class MainMenuController : MonoBehaviour
     public void CloseOptionsPanel()
     {
         PlaySound();
-        optionsPanel.SetActive(false); LeanTween.init(800);
-        LeanTween.moveY(optionsPanel, 2000, 1).setEaseOutBounce();
+        LeanTween.init(800);
+        LeanTween.scaleX(optionsPanel, 0, 1);
+        LeanTween.scaleY(optionsPanel, 0, 1);
+        optionsPanel.SetActive(false);
+       
     }
 
     public void OpenOptionsPanel()
     {
         PlaySound();
         optionsPanel.SetActive(true);
-        LeanTween.init(800);
-        LeanTween.moveY(optionsPanel, 0, 1).setEaseOutBounce();
-
-        //LeanTween.move(optionsPanel.GetComponent<RectTransform>(), new Vector3(0, 0, 0), 1f).setDelay(1f);
-
-
-
+        LeanTween.scaleX(optionsPanel, 1, 1);
+        LeanTween.scaleY(optionsPanel, 1, 1);
     }
 
     public void OpenSkinPanel()
     {
         PlaySound();
         skinPanel.SetActive(true);
+        LeanTween.init(800);
+        LeanTween.scaleX(skinPanel, 1, 1);
+        LeanTween.scaleY(skinPanel, 1, 1);
     }
 
     public void CloseSkinPanel()
     {
         PlaySound();
+        LeanTween.init(800);
+        LeanTween.scaleX(skinPanel, 0, 1);
+        LeanTween.scaleY(skinPanel, 0, 1);
         skinPanel.SetActive(false);
+        
     }
 
     public void OpenLanguagePanel()
     {
         PlaySound();
         languagePanel.SetActive(true);
+        LeanTween.init(800);
+        LeanTween.scaleX(languagePanel, 1, 1);
+        LeanTween.scaleY(languagePanel, 1, 1);
     }
 
     public void CloseLanguagePanel()
     {
         PlaySound();
+        LeanTween.init(800);
+        LeanTween.scaleX(languagePanel, 0, 1);
+        LeanTween.scaleY(languagePanel, 0, 1);
         languagePanel.SetActive(false);
     }
 
