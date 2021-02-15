@@ -90,9 +90,9 @@ public class MainMenuController : MonoBehaviour
         PlaySound();
         optionsPanel.SetActive(true);
         LeanTween.init(800);
-        //LeanTween.moveY(optionsPanel, 100, 1).setDelay(1f);
-        
-        LeanTween.move(optionsPanel.GetComponent<RectTransform>(), new Vector3(0, 0, 0), 1f).setDelay(1f);
+        LeanTween.moveY(optionsPanel, 0, 1).setEaseOutBounce();
+
+        //LeanTween.move(optionsPanel.GetComponent<RectTransform>(), new Vector3(0, 0, 0), 1f).setDelay(1f);
 
 
 
