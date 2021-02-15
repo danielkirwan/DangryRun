@@ -97,6 +97,7 @@ public class MainMenuController : MonoBehaviour
     public void OpenOptionsPanel()
     {
         PlaySound();
+        Debug.Log("Clicked");
         optionsPanel.SetActive(true);
         LeanTween.scaleX(optionsPanel, 1, 1);
         LeanTween.scaleY(optionsPanel, 1, 1);
@@ -142,6 +143,7 @@ public class MainMenuController : MonoBehaviour
     public void OpenTwitter()
     {
         PlaySound();
+        Debug.Log("Clicked");
         Application.OpenURL("https://twitter.com/DangryGames");
     }
 
