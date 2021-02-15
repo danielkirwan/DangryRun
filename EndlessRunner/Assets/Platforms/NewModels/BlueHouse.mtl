@@ -1,0 +1,22 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl custom8(Clone)
+Kd 0.69 0.674 0.675
+map_Kd Textures/custom8(Clone).png
+
+newmtl custom5(Clone)
+Kd 0.917 0.445 0.05
+map_Kd Textures/custom5(Clone).png
+
+newmtl _defaultMat(Clone)
+Kd 1 1 1
+
+newmtl wood(Clone)
+Kd 0.91 0.549 0.349
+
+newmtl woodDark(Clone)
+Kd 0.776 0.467 0.294
+
+newmtl roofLight(Clone)
+Kd 0.2862745 0.7568628 0.5921569
+

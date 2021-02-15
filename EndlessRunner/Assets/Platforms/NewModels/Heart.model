@@ -1,0 +1,12 @@
+# Made using Asset Forge (2.1.1)
+
+:materials
+
+[name:heart;color:RGBA(0.976, 0.290, 0.373, 1.000);scale:(1.0, 1.0);shader:Default;valueA:0.5;valueB:0;]
+[name:grey;color:RGBA(0.945, 0.949, 0.965, 1.000);scale:(1.0, 1.0);shader:Default;valueA:0.5;valueB:0;]
+[name:road;color:RGBA(0.267, 0.267, 0.267, 1.000);scale:(1.0, 1.0);shader:Default;valueA:0.5;valueB:0;]
+[name:red;color:RGBA(0.910, 0.333, 0.325, 1.000);scale:(1.0, 1.0);shader:Default;valueA:0.5;valueB:0;]
+
+:models
+
+[name:;collection:platformerKit;type:heart;position:(0.0000, 0.0000, 0.0000);rotation:(0.0000, 0.0000, 0.0000);scale:(1.0000, 1.0000, 1.0000);group:;locked:False;hidden:False;materials:heart;]

@@ -1,0 +1,14 @@
+# Made using Asset Forge (2.1.1)
+
+:materials
+
+[name:wood;color:RGBA(0.910, 0.549, 0.349, 1.000);scale:(1.0, 1.0);shader:Default;valueA:0.5;valueB:0;]
+[name:stoneDark;color:RGBA(0.502, 0.612, 0.659, 1.000);scale:(1.0, 1.0);shader:Default;valueA:0.5;valueB:0;]
+[name:woodDark;color:RGBA(0.776, 0.467, 0.294, 1.000);scale:(1.0, 1.0);shader:Default;valueA:0.5;valueB:0;]
+[name:stone;color:RGBA(0.604, 0.733, 0.788, 1.000);scale:(1.0, 1.0);texture:Stone/bricks;shader:Default;valueA:0.5;valueB:0;]
+[name:_defaultMat;color:RGBA(1.000, 1.000, 1.000, 1.000);scale:(1.0, 1.0);shader:Default;valueA:0.5;valueB:0;]
+[name:metal;color:RGBA(0.580, 0.569, 0.769, 1.000);scale:(1.0, 1.0);shader:Default;valueA:0.35;valueB:0.25;]
+
+:models
+
+[name:;collection:Hexagons;type:wall;position:(0.0000, 0.0000, 0.0000);rotation:(0.0000, 0.0000, 0.0000);scale:(0.5000, 2.0000, 0.5000);group:;locked:False;hidden:False;materials:stone;]

@@ -1,0 +1,9 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl stone(Clone)
+Kd 0.6039217 0.7333333 0.7882352
+map_Kd Textures/stone(Clone).png
+
+newmtl _defaultMat(Clone)
+Kd 1 1 1
+

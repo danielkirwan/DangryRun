@@ -1,0 +1,16 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl wood(Clone)
+Kd 0.91 0.549 0.349
+map_Kd Textures/wood(Clone).png
+
+newmtl grey(Clone)
+Kd 0.945 0.949 0.965
+
+newmtl red(Clone)
+Kd 0.91 0.333 0.325
+
+newmtl steel(Clone)
+Kd 0.311 0.309 0.34
+map_Kd Textures/steel(Clone).png
+

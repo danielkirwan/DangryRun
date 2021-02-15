@@ -1,0 +1,27 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl _defaultMat(Clone)
+Kd 0.939 0.953 1
+
+newmtl custom6(Clone)
+Kd 0.021 0.004 0.004
+map_Kd Textures/custom6(Clone).png
+
+newmtl metal(Clone)
+Kd 0.843 0.871 0.91
+
+newmtl wood(Clone)
+Kd 0.51 0.329 0.148
+map_Kd Textures/wood(Clone).png
+
+newmtl woodDark(Clone)
+Kd 0.698 0.316 0.194
+
+newmtl custom9(Clone)
+Kd 0.2152073 0.9448276 0.008589333
+map_Kd Textures/custom9(Clone).png
+
+newmtl custom10(Clone)
+Kd 0.9310345 0.8913415 0.8633229
+map_Kd Textures/custom10(Clone).png
+

@@ -1,0 +1,8 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl wood(Clone)
+Kd 0.91 0.549 0.349
+
+newmtl woodDark(Clone)
+Kd 0.776 0.467 0.294
+
