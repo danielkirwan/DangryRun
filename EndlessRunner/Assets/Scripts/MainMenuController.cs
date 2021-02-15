@@ -81,13 +81,21 @@ public class MainMenuController : MonoBehaviour
     public void CloseOptionsPanel()
     {
         PlaySound();
-        optionsPanel.SetActive(false);
+        optionsPanel.SetActive(false); LeanTween.init(800);
+        LeanTween.moveY(optionsPanel, 2000, 1).setEaseOutBounce();
     }
 
     public void OpenOptionsPanel()
     {
         PlaySound();
         optionsPanel.SetActive(true);
+        LeanTween.init(800);
+        //LeanTween.moveY(optionsPanel, 100, 1).setDelay(1f);
+        
+        LeanTween.move(optionsPanel.GetComponent<RectTransform>(), new Vector3(0, 0, 0), 1f).setDelay(1f);
+
+
+
     }
 
     public void OpenSkinPanel()
@@ -112,6 +120,12 @@ public class MainMenuController : MonoBehaviour
     {
         PlaySound();
         languagePanel.SetActive(false);
+    }
+
+    public void OpenTwitter()
+    {
+        PlaySound();
+        Application.OpenURL("https://twitter.com/DangryGames");
     }
 
 }
