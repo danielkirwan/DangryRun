@@ -17,7 +17,7 @@ public class MainMenuController : MonoBehaviour
     public void Start()
     {
         helpPanel.SetActive(false);
-        statsPanel.SetActive(false);
+        statsPanel.SetActive(true);
         optionsPanel.SetActive(false);
         skinPanel.SetActive(false);
         languagePanel.SetActive(false);
@@ -57,31 +57,39 @@ public class MainMenuController : MonoBehaviour
     public void CloseHelpPanel()
     {
         PlaySound();
-        LeanTween.init(800);
+        //LeanTween.init(800);
         LeanTween.scaleX(helpPanel, 0, 1);
         LeanTween.scaleY(helpPanel, 0, 1);
         helpPanel.SetActive(false);
+        OpenStatsPanel();
     }
 
     public void OpenHelpPanel()
     {
         PlaySound();
         helpPanel.SetActive(true);
-        LeanTween.init(800);
+        //LeanTween.init(800);
         LeanTween.scaleX(helpPanel, 1, 1);
         LeanTween.scaleY(helpPanel, 1, 1);
+        CloseStatsPanel();
     }
 
     public void CloseStatsPanel()
     {
-        PlaySound(); 
+        PlaySound();
+        LeanTween.init(800);
+        LeanTween.scaleX(statsPanel, 0, 1);
+        LeanTween.scaleY(statsPanel, 0, 1);
         statsPanel.SetActive(false);
     }
 
     public void OpenStatsPanel()
     {
         PlaySound();
+        LeanTween.init(800);
         statsPanel.SetActive(true);
+        LeanTween.scaleX(statsPanel, 1, 1);
+        LeanTween.scaleY(statsPanel, 1, 1);
     }
 
     public void CloseOptionsPanel()
@@ -91,7 +99,7 @@ public class MainMenuController : MonoBehaviour
         LeanTween.scaleX(optionsPanel, 0, 1);
         LeanTween.scaleY(optionsPanel, 0, 1);
         optionsPanel.SetActive(false);
-       
+        OpenStatsPanel();
     }
 
     public void OpenOptionsPanel()
@@ -101,6 +109,7 @@ public class MainMenuController : MonoBehaviour
         optionsPanel.SetActive(true);
         LeanTween.scaleX(optionsPanel, 1, 1);
         LeanTween.scaleY(optionsPanel, 1, 1);
+        CloseStatsPanel();
     }
 
     public void OpenSkinPanel()
@@ -110,6 +119,7 @@ public class MainMenuController : MonoBehaviour
         LeanTween.init(800);
         LeanTween.scaleX(skinPanel, 1, 1);
         LeanTween.scaleY(skinPanel, 1, 1);
+        CloseStatsPanel();
     }
 
     public void CloseSkinPanel()
@@ -119,7 +129,7 @@ public class MainMenuController : MonoBehaviour
         LeanTween.scaleX(skinPanel, 0, 1);
         LeanTween.scaleY(skinPanel, 0, 1);
         skinPanel.SetActive(false);
-        
+        OpenStatsPanel();
     }
 
     public void OpenLanguagePanel()
@@ -129,6 +139,7 @@ public class MainMenuController : MonoBehaviour
         LeanTween.init(800);
         LeanTween.scaleX(languagePanel, 1, 1);
         LeanTween.scaleY(languagePanel, 1, 1);
+        CloseStatsPanel();
     }
 
     public void CloseLanguagePanel()
@@ -138,6 +149,7 @@ public class MainMenuController : MonoBehaviour
         LeanTween.scaleX(languagePanel, 0, 1);
         LeanTween.scaleY(languagePanel, 0, 1);
         languagePanel.SetActive(false);
+        OpenStatsPanel();
     }
 
     public void OpenTwitter()
