@@ -12,6 +12,7 @@ public class GoogleAds : MonoBehaviour
     string googleAdsAndriodIDLive = "ca-app-pub-1169852078227629/2245807626";
     //string bannderAdTest = "ca-app-pub-3940256099942544/6300978111";
     //public Text text;
+    //adding comment
 
     private BannerView bannerView;
 
