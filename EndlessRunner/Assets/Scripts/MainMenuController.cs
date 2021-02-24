@@ -159,4 +159,16 @@ public class MainMenuController : MonoBehaviour
         Application.OpenURL("https://twitter.com/DangryGames");
     }
 
+    public void OpenYoutube()
+    {
+        PlaySound();
+        Application.OpenURL("https://www.youtube.com/channel/UCijlLKAY2ddkDBGqommWOtg");
+    }
+
+    public void OpenWebsite()
+    {
+        PlaySound();
+        Application.OpenURL("https://dangrygames.co.uk/");
+    }
+
 }

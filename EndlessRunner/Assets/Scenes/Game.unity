@@ -1792,7 +1792,7 @@ MonoBehaviour:
   - prefab: {fileID: 6484021805456933415, guid: 56123ffc81ee0574282f540b7a02b3e9,
       type: 3}
     amount: 5
-    expandable: 0
+    expandable: 1
   - prefab: {fileID: 6837383363360638462, guid: 36b457eac77cfc14cbdcac07c68d14dd,
       type: 3}
     amount: 5
