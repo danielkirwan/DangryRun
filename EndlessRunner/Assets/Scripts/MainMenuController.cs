@@ -29,7 +29,7 @@ public class MainMenuController : MonoBehaviour
         namePanel.SetActive(false);
         sfx = GameObject.FindWithTag("GameData").GetComponentsInChildren<AudioSource>();
 
-        PlayerPrefs.DeleteKey("PlayerName");
+        //PlayerPrefs.DeleteKey("PlayerName");
 
         if (PlayerPrefs.HasKey("PlayerName"))
         {
