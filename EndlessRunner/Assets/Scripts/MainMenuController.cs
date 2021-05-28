@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class MainMenuController : MonoBehaviour
     public GameObject optionsPanel;
     public GameObject skinPanel;
     public GameObject languagePanel;
+    public GameObject namePanel;
+
+    public Text nameText;
 
     int maxLives = 3;
     AudioSource[] sfx;
@@ -17,11 +21,25 @@ public class MainMenuController : MonoBehaviour
     public void Start()
     {
         helpPanel.SetActive(false);
-        statsPanel.SetActive(true);
+        //statsPanel.SetActive(true);
+        statsPanel.SetActive(false);
         optionsPanel.SetActive(false);
         skinPanel.SetActive(false);
         languagePanel.SetActive(false);
+        namePanel.SetActive(false);
         sfx = GameObject.FindWithTag("GameData").GetComponentsInChildren<AudioSource>();
+
+        PlayerPrefs.DeleteKey("PlayerName");
+
+        if (PlayerPrefs.HasKey("PlayerName"))
+        {
+            nameText.text = PlayerPrefs.GetString("PlayerName");
+            OpenStatsPanel();
+        }
+        if(!PlayerPrefs.HasKey("PlayerName")){
+            OpenNamePanel();
+        }
+
     }
 
     public void LoadGameScene()
@@ -52,6 +70,27 @@ public class MainMenuController : MonoBehaviour
         {
             QuitGame();
         }
+    }
+
+    public void OpenNamePanel()
+    {
+        PlaySound();
+        namePanel.SetActive(true);
+        LeanTween.scaleX(namePanel, 1, 1);
+        LeanTween.scaleY(namePanel, 1, 1);
+        CloseStatsPanel();
+    }
+
+    public void CloseNamePanel()
+    {
+        PlaySound();
+        
+        LeanTween.scaleX(namePanel, 0, 1);
+        LeanTween.scaleY(namePanel, 0, 1);
+        namePanel.SetActive(false);
+        Invoke("OpenStatsPanel", 1);
+        //OpenStatsPanel();
+        //SceneManager.LoadScene("Menu", LoadSceneMode.Single);
     }
 
     public void CloseHelpPanel()
@@ -88,6 +127,8 @@ public class MainMenuController : MonoBehaviour
         PlaySound();
         LeanTween.init(800);
         statsPanel.SetActive(true);
+        nameText.text = PlayerPrefs.GetString("PlayerName");
+        Debug.Log(nameText.text);
         LeanTween.scaleX(statsPanel, 1, 1);
         LeanTween.scaleY(statsPanel, 1, 1);
     }
