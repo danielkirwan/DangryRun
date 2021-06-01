@@ -461,15 +461,15 @@ public class PlayerController : MonoBehaviour
     {
         if(this.transform.position.x != leftPos)
         {
-            //this.transform.Translate(-1f, 0, 0);
+            this.transform.Translate(-1f, 0, 0);
             
-            if(this.transform.position.x == centerPos)
-            {
-                LeanTween.moveX(this.gameObject, leftPos, xMoveSpeed);
-            }else if(this.transform.position.x == rightPos)
-            {
-                LeanTween.moveX(this.gameObject, centerPos, xMoveSpeed);
-            }
+            //if(this.transform.position.x == centerPos)
+            //{
+            //    LeanTween.moveX(this.gameObject, leftPos, xMoveSpeed);
+            //}else if(this.transform.position.x == rightPos)
+            //{
+            //    LeanTween.moveX(this.gameObject, centerPos, xMoveSpeed);
+            //}
         }
     }
 
@@ -477,14 +477,14 @@ public class PlayerController : MonoBehaviour
     {
         if(this.transform.position.x != rightPos)
         {
-            //this.transform.Translate(1f, 0, 0);
-            if(this.transform.position.x == centerPos)
-            {
-                LeanTween.moveX(this.gameObject, rightPos, xMoveSpeed);
-            }else if(this.transform.position.x == leftPos)
-            {
-                LeanTween.moveX(this.gameObject, centerPos, xMoveSpeed);
-            }
+            this.transform.Translate(1f, 0, 0);
+            //if(this.transform.position.x == centerPos)
+            //{
+            //    LeanTween.moveX(this.gameObject, rightPos, xMoveSpeed);
+            //}else if(this.transform.position.x == leftPos)
+            //{
+            //    LeanTween.moveX(this.gameObject, centerPos, xMoveSpeed);
+            //}
         }
     }
 
