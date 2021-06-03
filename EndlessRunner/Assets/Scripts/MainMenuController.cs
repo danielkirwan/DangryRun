@@ -128,6 +128,7 @@ public class MainMenuController : MonoBehaviour
         LeanTween.init(800);
         statsPanel.SetActive(true);
         nameText.text = PlayerPrefs.GetString("PlayerName");
+
         Debug.Log(nameText.text);
         LeanTween.scaleX(statsPanel, 1, 1);
         LeanTween.scaleY(statsPanel, 1, 1);

@@ -13681,7 +13681,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a1fba184b6d3594089616522cb8d014, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastScore: {fileID: 566130488}
   highScore: {fileID: 2061454737}
 --- !u!1 &1523590281
 GameObject:
@@ -19850,7 +19849,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a1fba184b6d3594089616522cb8d014, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastScore: {fileID: 92471604}
   highScore: {fileID: 1377018485}
 --- !u!114 &2098808624
 MonoBehaviour:

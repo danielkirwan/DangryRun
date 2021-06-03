@@ -121,7 +121,7 @@ public class PlayerController : MonoBehaviour
                 gameOverPanel.SetActive(true);
                 movementPanel.SetActive(false);
                 jumpPanel.SetActive(false);
-                Advertisement.Show();
+                
 
                 PlayerPrefs.SetInt("lastscore", PlayerPrefs.GetInt("score"));
                 if (PlayerPrefs.HasKey("highscore"))
@@ -136,6 +136,7 @@ public class PlayerController : MonoBehaviour
                 {
                     PlayerPrefs.SetInt("highscore", PlayerPrefs.GetInt("score"));
                 }
+                Advertisement.Show();
             }
             
         }
@@ -296,7 +297,7 @@ public class PlayerController : MonoBehaviour
                 movementPanel.SetActive(false);
                 jumpPanel.SetActive(false);
                 
-                Advertisement.Show();
+                
 
                 PlayerPrefs.SetInt("lastscore", PlayerPrefs.GetInt("score"));
                 if (PlayerPrefs.HasKey("highscore"))
@@ -311,6 +312,7 @@ public class PlayerController : MonoBehaviour
                 {
                     PlayerPrefs.SetInt("highscore", PlayerPrefs.GetInt("score"));
                 }
+                Advertisement.Show();
             }
         }
 
